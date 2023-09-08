@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -47,6 +47,12 @@ li {
   );
 }
 
+/* Rating part */
+
+#rating--state {
+  display: none;
+}
+
 #star {
   background-image: url(images/icon-star.svg);
   background-repeat: no-repeat;
@@ -76,6 +82,13 @@ li {
   justify-content: center;
 }
 
+.btn__value:hover {
+  cursor: pointer;
+  color: #262f38;
+  background-color: #959eac;
+  transition: all 0.4s ease-in-out;
+}
+
 #btn__submit {
   color: white;
   letter-spacing: 1px;
@@ -88,6 +101,44 @@ li {
   margin: auto;
   width: 95%;
 }
+
+#btn__submit:hover {
+  cursor: pointer;
+  color: #fb7413;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Thank you part  */
+
+#thanks--state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fb7413;
+  border-radius: 20px;
+  background-color: #262f38;
+  padding: 6px 15px 5px 15px;
+  border: none;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#thanks--state > .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thanks-img {
+  margin: 20px 0px 35px 0px;
+}
+
+/* Attribution  */
 
 .attribution {
   font-size: 11px;

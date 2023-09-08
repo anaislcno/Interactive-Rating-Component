@@ -20,33 +20,43 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <!-- Rating state start -->
+    <!-- Rating state -->
     <div id="container">
-      <div id="star"></div>
-      <h1>How did we do?</h1>
-      <p class="text">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <ul id="rating-list">
-        <li class="btn__value" value="1">1</li>
-        <li class="btn__value" value="2">2</li>
-        <li class="btn__value" value="3">3</li>
-        <li class="btn__value" value="4">4</li>
-        <li class="btn__value" value="5">5</li>
-      </ul>
-      <button id="btn__submit">Submit</button>
+      <div id="rating--state">
+        <div id="star"></div>
+        <h1>How did we do?</h1>
+        <p class="text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul id="rating-list">
+          <li class="btn__value" value="1">1</li>
+          <li class="btn__value" value="2">2</li>
+          <li class="btn__value" value="3">3</li>
+          <li class="btn__value" value="4">4</li>
+          <li class="btn__value" value="5">5</li>
+        </ul>
+        <button id="btn__submit">Submit</button>
+      </div>
+      <!-- Thanks state -->
+      <div id="thanks--state">
+        <img
+          src="images/illustration-thank-you.svg"
+          alt="thanks illustration"
+          class="thanks-img"
+        />
+        <h2>
+          You selected
+          <!-- Add rating here -->
+          out of 5
+        </h2>
+        <h1>Thank you!</h1>
+        <p class="text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
     </div>
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    <!-- You selected -->
-    <!-- Add rating here -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
-
-    <!-- Thank you state end -->
 
     <div class="attribution">
       Challenge by
