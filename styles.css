@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -27,17 +27,16 @@ h1 {
 }
 
 li {
-  color: #959eac;
   list-style-type: none;
 }
 
 #container {
   max-width: 350px;
-  min-height: 300px;
+  height: 370px;
   margin: auto;
   transform: translateY(55%);
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 25px;
   /* background-color: #252d37; */
   background: rgb(37, 45, 55);
   background: linear-gradient(
@@ -49,40 +48,48 @@ li {
 
 /* Rating part */
 
-#rating--state {
+/* #rating--state {
   display: none;
-}
+} */
 
 #star {
   background-image: url(images/icon-star.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #262f38;
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: 43px;
   border-radius: 50%;
-  margin-bottom: 25px;
+  margin: 5px 0px 25px 0px;
 }
 
 #rating-list {
   display: flex;
   flex-direction: row;
-  margin: 25px 0px;
+  margin: 25px 0px 30px 0px;
   justify-content: space-around;
 }
 
-.btn__value {
+.btn {
   font-size: 14px;
+  border: none;
   background-color: #262f38;
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: 43px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #959eac;
 }
 
-.btn__value:hover {
+.btn:focus {
+  cursor: pointer;
+  color: white;
+  background-color: #fb7413;
+}
+
+.btn:hover {
   cursor: pointer;
   color: #262f38;
   background-color: #959eac;
@@ -112,7 +119,7 @@ li {
 /* Thank you part  */
 
 #thanks--state {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -131,11 +138,11 @@ h2 {
 
 #thanks--state > .text {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .thanks-img {
-  margin: 20px 0px 35px 0px;
+  margin: 15px 0px 30px 0px;
+  max-width: 150px;
 }
 
 /* Attribution  */
