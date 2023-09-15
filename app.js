@@ -27,6 +27,11 @@ btn.addEventListener("click", () => {
 clear.addEventListener("click", () => {
   thanks.style.display = "none";
   main.style.display = "flex";
+  // Réinitialiser la notation
+  rates.forEach((btn) => {
+    btn.classList.remove("selected");
+  });
+  rating.innerHTML = "";
 });
 
 rates.forEach((rate) => {
