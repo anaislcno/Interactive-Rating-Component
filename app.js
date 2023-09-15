@@ -1,4 +1,5 @@
 const btn = document.getElementById("btn__submit");
+const clear = document.getElementById("btn__again");
 const main = document.getElementById("rating--state");
 const thanks = document.getElementById("thanks--state");
 const rating = document.getElementById("rating");
@@ -21,6 +22,11 @@ btn.addEventListener("click", () => {
   // Changement de container si une sélection a été faite
   thanks.style.display = "flex";
   main.style.display = "none";
+});
+
+clear.addEventListener("click", () => {
+  thanks.style.display = "none";
+  main.style.display = "flex";
 });
 
 rates.forEach((rate) => {
